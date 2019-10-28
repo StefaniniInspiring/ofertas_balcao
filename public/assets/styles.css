@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+}
+
+* {
+  font-size: 5mm;
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  max-width: 60mm;
+  width: inherit;
+}
+
+@media print {
+  .hidden-print,
+  .hidden-print * {
+    display: none !important;
+  }
+
+  .ticket-bg {
+    display: none !important;
+  }
+}
+
+@page {
+  size: auto;
+  margin: 0;
+}
+
+.ticket-bg {
+  width: 80mm;
+  max-width: 80mm;
+  height: 200px;
+  position: absolute;
+  top: 50px;
+  z-index: 0;
+  background-color: #FBFCA9;
+}
+
+.ticket {
+  z-index: 10;
+  position: absolute;
+  top: 50px;
+  width: 80mm;
+  max-width: 80mm;
+  display: grid;
+  grid-template-areas:
+    "logo"
+    "name"
+    "slogan"
+    "header"
+    "offers"
+    "footer";
+}
+
+.logo {
+  grid-area: logo;
+  justify-self: center;
+}
+
+.name {
+  grid-area: name;
+  justify-self: center;
+  font-size: 5.4mm;
+  margin: 5mm;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.slogan {
+  grid-area: slogan;
+  justify-self: center;
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 3.02mm;
+  text-align: start;
+  padding: 0 8mm 4mm 8mm;
+}
+
+.header {
+  grid-area: header;
+  background-color: black;
+  height: 12mm;
+  margin: 0mm;
+  display: grid;
+  grid-template-columns: 16mm 64mm;
+  align-items: center;
+}
+
+.header span {
+  color: white;
+}
+
+.header svg {
+  justify-self: center;
+}
