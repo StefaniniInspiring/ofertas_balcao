@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "febrafar-pwa"
+  },
+  "targets": {
+    "febrafar-pwa": {
+      "hosting": {
+        "ofertas-balcao": [
+          "ofertas-balcao"
+        ]
+      }
+    }
+  }
+}
