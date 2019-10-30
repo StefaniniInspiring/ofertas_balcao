@@ -2,7 +2,7 @@ body {
   margin: 0;
 }
 
-* {
+span, p {
   font-size: 5mm;
   font-family: "Roboto", sans-serif;
 }
@@ -28,14 +28,18 @@ img {
   margin: 0;
 }
 
+p {
+  margin: 0;
+}
+
 .ticket-bg {
   width: 80mm;
   max-width: 80mm;
-  height: 200px;
+  height: 100vw;
   position: absolute;
   top: 50px;
   z-index: 0;
-  background-color: #FBFCA9;
+  background-color: #fbfca9;
 }
 
 .ticket {
@@ -88,8 +92,72 @@ img {
   align-items: center;
 }
 
+.offers {
+  grid-area: offers; 
+}
+
+.offer {
+  display: grid;
+  grid-template-columns: 56mm 24mm;
+  align-items: center;
+}
+
+.offer .product-name {
+  font-size: 7mm;
+}
+
+.offer .product-description {
+  font-size: 4mm;
+  margin-top: -2mm;
+}
+
+.offer .discount {
+  font-size: 12mm;
+  letter-spacing: -0.4mm;
+  font-weight: bold;
+}
+
+.offer .discount-label {
+  font-size: 4mm;
+  margin-top: -4mm;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.footer, .client {
+  font-size: 5.4mm;
+  text-transform: uppercase;
+}
+
+.footer, .expiry {
+  font-size: 4mm;
+  font-weight: bold;
+}
+
+.footer, .clerk {
+  font-size: 4mm;
+  font-weight: bold;
+}
+
+hr {
+  border: .4mm solid black;
+  margin-block-start: 5mm;
+  margin-block-end: 5mm;
+}
+
 .header span {
   color: white;
+}
+
+.header, .warning {
+  font-size: 2.8mm;
+  font-weight: bold;
+}
+
+.header, .legal {
+  font-size: 2.8mm;
 }
 
 .header svg {
