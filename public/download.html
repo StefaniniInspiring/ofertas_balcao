@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <script>
+      function redirectGivenOs() {
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+        if (/android/i.test(userAgent)) {
+          window.location.href = "https://play.google.com/store/apps/details?id=com.inspiring.entrefarma";
+          return;
+        } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+            window.location.href = "https://apps.apple.com/us/app/entrefarma/id1096434496?ls=1";
+            return;
+        } else {
+            window.location.href = "https://app.febrafar.stefaniniinspiring.com.br/entrefarma";
+        }
+      }
+
+      redirectGivenOs();
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -141,10 +141,19 @@ p {
   font-weight: bold;
 }
 
+.download {
+  text-align: center;
+  margin-top: 4mm;
+}
+
 hr {
-  border: .4mm solid black;
+  border: 1px solid black;
   margin-block-start: 5mm;
   margin-block-end: 5mm;
+}
+
+.download img {
+  height: 40mm;
 }
 
 .header span {
